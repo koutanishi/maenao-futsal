@@ -718,19 +718,20 @@ section { position: relative; }
 
 .plan-benefits { list-style: none; }
 .plan-benefits li {
-  padding: 12px 0;
+  padding: 12px 0 12px 20px;
   border-bottom: 1px solid rgba(255,255,255,0.05);
   font-size: 0.85rem;
   color: var(--gray);
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  line-height: 1.8;
+  position: relative;
 }
 .plan-benefits li::before {
   content: '✦';
   color: var(--red);
   font-size: 0.7rem;
-  flex-shrink: 0;
+  position: absolute;
+  left: 0;
+  top: 15px;
 }
 .plan-benefits li .benefit-highlight {
   color: var(--white);
@@ -1245,7 +1246,7 @@ footer {
     <span>CHALLENGE</span><span class="red">✦</span>
     <span>GROWTH</span><span class="red">✦</span>
     <span>ENERGY</span><span class="red">✦</span>
-    <span>今日頑張る</span><span class="red">✦</span>
+    <span>毎日頑張る</span><span class="red">✦</span>
   </div>
 </div>
 
